@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Project Multiplication table</title>
+		
+	</head>
+	<body>
+		<h1 align="center">Multiplication table</h1>
+		<button onclick="create()">Create Multiplication Table</button>
+		<script type="text/javascript" >
+			function create() 
+			{
+				var a=prompt("Enter the number whose table you want to create:");
+				var b=prompt("Enter the number till where you want to create the table (no. of terms):");
+				document.write('<table border=5px style="border-collapse:collapse; width:900px; text-align: center; "><tr><th>Number</th><th>x</th><th>Terms</th><th>Product</th></tr>');
+				for (var i=1; i<=b; i++) 
+				{
+					document.write("<tr><td style='background-color: black; color: white;'>"+a+
+					"</td><td style='background-color: black; color: white;'>x</td><td style='background-color: black; color: white;'>"
+					+i+"</td><td style='background-color: navy; color: white;'>"+(a*i)+"</td></tr>");	
+				}
+				document.write("</table>");
+				
+			}
+		</script>
+	</body>
+</html>
